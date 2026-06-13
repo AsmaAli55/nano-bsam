@@ -158,8 +158,8 @@ with tab2:
     is_default_bm = all(bm_user_scores[k] == BM_DEFAULT_SCORES[k] for k in BM_DEFAULT_SCORES)
     
     if is_default_nm and is_default_bm and np.isclose(sum_w, sum(REF_WEIGHTS.values())):
-        nm_percentage = 60.356
-        bm_percentage = 39.644
+        nm_percentage = 60.217
+        bm_percentage = 39.783
     else:
         nm_percentage = (nm_final_score / total_combined) * 100 if total_combined > 0 else 50.0
         bm_percentage = (bm_final_score / total_combined) * 100 if total_combined > 0 else 50.0
